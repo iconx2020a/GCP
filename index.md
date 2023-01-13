@@ -1,4 +1,5 @@
 # Google Cloud QuickStart
+### Learn infrastructure as a service with Google cloud console, gcloud and terraform
 This book introduces Google cloud infrastructure as a service in systematic, and easy to grasp manner, focusing on clear explanation of concepts. It my intention to make this journey easy and quick for new readers and intermdiate professionals who want a quick reference manual to Google Cloud. You will find Google console examples, gcloud as well as terraform code introducing you to infrastructure as code right away.
 
 [Find the 2023 edition of the book here](https://www.amazon.com/dp/B09J2X3SFX) 
