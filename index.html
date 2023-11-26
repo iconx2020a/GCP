@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+
+<head>
+    <meta charset="UTF-8">
+    <title>Norwegian Alphabet Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <header>
+        <h1>Learn the Norwegian Alphabet and thier fonics sounds</h1>
+    </header>
+
+<div class="mainWindowPage">
+    <!-- in the main window will be 2 section collons. left for displaying the menu you can chose from 
+      and right displaying the content clicked from the right section-->
+
+      <aside class="left"> 
+         <div class="clickable-bar" id="bar1">The Norwegian Alphabet</div>
+         <div class="clickable-bar" id="bar2">The sounds of the Alphabets</div>
+      </aside> 
+
+       <main class="right">
+         <div class="response" id="response1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZduqcgjvHNQ?si=Ssr2NdXV0q4_zxwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+         </div>
+       <div class="response" id="response2">
+          <img src="abc1.png"  alt="abc">
+          <button class = "b1" onclick="playSound1()">A</button> <button class="b2" onclick="playSound2()" >B</button>
+          <button class="b3" onclick="playSound3()" >C  </button>
+      </div>
+      </main>
+</div>
+
+    <footer>
+        <p>&copy; 2023 AlfaLingo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
