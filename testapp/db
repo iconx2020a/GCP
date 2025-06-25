@@ -1,16 +1,17 @@
-'''
-  #!/bin/bash
+´´´
+#!/bin/bash
 # --- Installation ---
 echo "Installing MongoDB..."
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 
-# --- Create Database and Collection ---
-echo "Connecting to MongoDB..."
-mongosh -u <username> -p "<password>"
-Run 
+
+´´´
+
+# Access DB
+´´´
+mongosh -u <username> -p "<password>" 
 use <database_name>
-'''
 show dbs
 use admindb
 show 
@@ -19,10 +20,10 @@ switched to db admindb
 admindb> show collections
 users
 admindb> db.users.find()
-https://www.datensen.com/blog/data-modeling/show-collections-mongodb/
+´´´
 
 # Enable authentication -optional
-'''
+´´´
 To install MongoDB with a password, you'll first need to enable authentication and then create a user with the desired password. Here's a step-by-step guide:
 1. Enable Authentication:
 Edit the MongoDB configuration file (mongod.conf):
@@ -37,4 +38,6 @@ Test the user: Log out of the shell and try connecting with the newly created us
 3. Test Authentication:
 Connect to MongoDB using the new credentials: Use the mongo command with the -u and -p options to connect using the newly created user and password. For example: mongo --host localhost -u admin -p your_password --authenticationDatabase admin. 
 https://medium.com/mongoaudit/how-to-enable-authentication-on-mongodb-b9e8a924efac
-'''
+´´´
+# References
+https://www.datensen.com/blog/data-modeling/show-collections-mongodb/
