@@ -23,14 +23,15 @@ admindb> db.users.find()
 
 # Enable authentication -optional
 ```
-To install MongoDB with a password, you'll first need to enable authentication and then create a user with the desired password. Here's a step-by-step guide:
+To install MongoDB with a password, you'll first need to enable authentication and then create a user with the desired password:
 1. Enable Authentication:
 Edit the MongoDB configuration file (mongod.conf):
-Find the security section and uncomment (remove #) and set authorization: enabled. You might need to add a bindIp line to specify the IP address for the MongoDB server. 
+Find the security section and uncomment (remove #) and set authorization: enabled. 
+You might need to add a bindIp line to specify the IP address for the MongoDB server. 
 Restart MongoDB:
 Use the appropriate command for your operating system (e.g., systemctl restart mongod on Linux). 
 2. Create a User:
-Connect to the MongoDB shell: Use the mongo command to connect to your MongoDB instance. 
+Use the mongo command to connect to your MongoDB instance. 
 Switch to the admin database: Use use admin. 
 Create the user: Use the db.createUser() command with the desired username, password, and any required roles. For example: db.createUser({ user: "admin", pwd: "your_password", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] }). 
 Test the user: Log out of the shell and try connecting with the newly created user and password to verify the authentication. 
