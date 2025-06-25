@@ -18,14 +18,12 @@ show dbs
 use admindb
 db.createCollection("users")
 show collections
-db.users.insert({email:"test@gmail.com", name: "John K", password:"password123", role:"member"})
-db.users.insert({email:"admin@gmail.com", name: "Bob Doe", password:"AdminPassword", role:"admin"})
+db.users.insert({email:"alice@medicoms.net", name: "Alice Cambo", password:"password123", role:"admin"}
+db.users.insert({email:"james@medicoms.net", name: "James Boyce", password:"password123", role:"member"}
 admin> db.users.find()
 ```
 
 # References
 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/
-
 https://www.datensen.com/blog/data-modeling/show-collections-mongodb/
-
 https://medium.com/mongoaudit/how-to-enable-authentication-on-mongodb-b9e8a924efac
