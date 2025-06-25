@@ -2,6 +2,8 @@
 ```
 #!/bin/bash
 # --- Installation ---
+Dedian follow this:
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/
 echo "Installing MongoDB..."
 sudo apt-get update
 sudo apt-get install -y mongodb-org
