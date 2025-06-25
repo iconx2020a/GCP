@@ -41,4 +41,5 @@ Connect to MongoDB using the new credentials: Use the mongo command with the -u 
 ```
 # References
 https://www.datensen.com/blog/data-modeling/show-collections-mongodb/
+
 https://medium.com/mongoaudit/how-to-enable-authentication-on-mongodb-b9e8a924efac
