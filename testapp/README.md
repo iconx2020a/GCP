@@ -18,9 +18,9 @@ show dbs
 use admindb
 db.createCollection("users")
 show collections
-db.users.insert({email:"alice@medicoms.net", name: "Alice Cambo", password:"password123", role:"admin"}
-db.users.insert({email:"james@medicoms.net", name: "James Boyce", password:"password123", role:"member"}
-admin> db.users.find()
+admindb>db.users.insert({email:"alice@medicoms.net", name: "Alice Cambo", password:"password123", role:"admin"}
+admindb>db.users.insert({email:"james@medicoms.net", name: "James Boyce", password:"password123", role:"member"}
+admindb> db.users.find()
 ```
 
 # References
