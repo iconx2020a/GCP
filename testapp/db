@@ -21,7 +21,7 @@ users
 admindb> db.users.find()
 https://www.datensen.com/blog/data-modeling/show-collections-mongodb/
 
-#Enable authentication
+# Enable authentication -optional
 '''
 To install MongoDB with a password, you'll first need to enable authentication and then create a user with the desired password. Here's a step-by-step guide:
 1. Enable Authentication:
