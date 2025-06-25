@@ -14,24 +14,18 @@ sudo systemctl start mongod
 ```
 mongosh 
 show dbs
-use admin
+#create db
+use admindb
+db.createCollection("users")
 show collections
-db.createUser({ user: "admin", pwd: "password", roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] })
-admin> db.system.users.find()
+db.users.insert({email:"test@gmail.com", name: "John K", password:"password123", role:"member"})
+db.users.insert({email:"admin@gmail.com", name: "Bob Doe", password:"AdminPassword", role:"admin"})
+admin> db.users.find()
 ```
 
-# Enable authentication -optional
-```
-To install MongoDB with a password, you'll first need to enable authentication and then create a user with the desired password:
-1. Enable Authentication:
-Edit the MongoDB configuration file (mongod.conf):
-Find the security section and uncomment (remove #) and set authorization: enabled. 
-You might need to add a bindIp line to specify the IP address for the MongoDB server. 
-Restart MongoDB:
-Use the appropriate command for your operating system (e.g., systemctl restart mongod on Linux). 
-
-```
 # References
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/
+
 https://www.datensen.com/blog/data-modeling/show-collections-mongodb/
 
 https://medium.com/mongoaudit/how-to-enable-authentication-on-mongodb-b9e8a924efac
