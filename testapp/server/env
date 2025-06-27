@@ -1,0 +1,1 @@
+DB_HOST=mongodb://serverIP:27017/admindb
