@@ -19,7 +19,7 @@ mongosh  <<EOF
 use $DB_NAME
 db.createCollection("$COLLECTION_NAME")
 show collections
-db.users.insert({email:"alice@medicoms.net", name: "Alice Cambo", password:"password123", role:"admin"}
-db.users.insert({email:"james@medicoms.net", name: "James Boyce", password:"password123", role:"member"}
+db.users.insert({email:"alice@medicoms.net", name: "Alice Cambo",password:"password123", role:"admin"})
+db.users.insert({email:"james@medicoms.net", name: "James Boyce", password:"password123", role:"member"})
 db.users.find()
 EOF
