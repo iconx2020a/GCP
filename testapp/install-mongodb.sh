@@ -7,6 +7,7 @@ curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \
  sudo apt update
 
  sudo apt-get install -y mongodb-org
+ chmod 600 mongod.conf
  sudo cp mongod.conf /etc/
  sudo systemctl start mongod
  sudo  systemctl enable mongod
