@@ -22,9 +22,9 @@ const SignIn = (props:any) => {
   });
 
   const client = useApolloClient();
-  const [cookies, setCookies] = useCookies<any>(['user']);
+ const [cookies, setCookies] = useCookies<any>(['user']);
   const [values, setValues] = useState<any>();
-
+  
 const [signIn, { called, loading, data }] = useLazyQuery(GET_ADMIN, {  variables: values,
     onCompleted: (data) => {
         client.writeQuery({
