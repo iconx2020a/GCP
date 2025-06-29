@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-/*import {ReadMe} from "../pages/ReadMe";*/
 import Header from "../components/Header";
 const Nav = styled.nav`
   padding: 1em;
