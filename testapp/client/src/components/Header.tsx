@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { query } from "../pages/SignUp";
 import { useNavigate } from "react-router-dom";
