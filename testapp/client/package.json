@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:4000", 
+  "proxy": "https:0.0.0.0:4000", 
   "dependencies": {
     "-": "^0.0.1",
     "@apollo/client": "^3.6.9",
