@@ -28,7 +28,7 @@ const [cookie, setCookie, removeCookie] = useCookies(['SessionToken']);
   const { data, client } = useQuery(IS_LOGGED_IN);
   return (
     <header>
-      <h2>Welcome Raindoff service portal</h2>
+      <h2>Welcome to Medicoms service portal</h2>
       <UserState>
         {data.isLoggedIn ? (
           <ButtonAsLink
