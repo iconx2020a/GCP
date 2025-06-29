@@ -24,8 +24,7 @@ export const Admin = () =>{
       <Header />
     <div>
       <p><b>Since administrators are always forgetting their passwords we have created ssh private key to replace passwords.
-      You are responsible for the security of the ssh private key. Use it together with your user name to access the victim2 server with ip:192.168.42.156 
-      <br /> Very big thanks to the new Security Manager!!.
+      You are responsible for the security of the ssh private key.
   </b></p>
      </div>
    <div>
