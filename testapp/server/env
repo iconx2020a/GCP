@@ -1,1 +1,1 @@
-DB_HOST=mongodb://serverIP:27017/admindb
+DB_HOST=mongodb://DBServerIP:27017/admindb
